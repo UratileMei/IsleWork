@@ -21,7 +21,7 @@ public class Employee
 
     public void addEmployee(Employee employee)
     {
-        
+        employee.Email = Console.ReadLine();
     }
     public void Print()
     {

@@ -23,7 +23,7 @@ public class Employee
     
     public void Print()
     {
-        Console.WriteLine($"Id: {Id}");
+        Console.WriteLine($"{Id++}: {FirstName} {LastName}, {Email} added");
     }
 }
  

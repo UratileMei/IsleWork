@@ -17,7 +17,6 @@ public class Employee
         LastName = lastName;
         Email = email;
         Role = role;
-        Console.WriteLine($"{Id}: {FirstName} {LastName}, {Email} added");
     }
 
     

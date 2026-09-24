@@ -17,13 +17,13 @@ public class Employee
         LastName = lastName;
         Email = email;
         Role = role;
-        Console.WriteLine($"{Id++}: {FirstName} {LastName}, {Email} added");
+        Console.WriteLine($"{Id}: {FirstName} {LastName}, {Email} added");
     }
 
     
     public void Print()
     {
-        Console.WriteLine($"{Id++}: {FirstName} {LastName}, {Email} added");
+        Console.WriteLine($"{Id}: {FirstName} {LastName}, {Email} added");
     }
 }
  

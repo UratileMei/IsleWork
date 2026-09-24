@@ -1,5 +1,7 @@
 ﻿using IsleWork;
-int id = 1;
+
+int option = 0;
+int employeeId = 1;
 String FirstName = null;
 String LastName = null;
 String Email = null;
@@ -10,8 +12,18 @@ Console.WriteLine($"Please enter the last name of the employee.");
 LastName = Console.ReadLine();
 Console.WriteLine($"Please enter the email of the employee.");
 Email = Console.ReadLine();
-Employee employee = new Employee(id, FirstName, LastName, Email, Role);
+Employee employee = new Employee(employeeId, FirstName, LastName, Email, Role);
 
 
-
+if (option == 0)
+{
+    employeeId = employeeId++;
+    Console.WriteLine("Please enter the first name of the employee.");
+    FirstName = Console.ReadLine();
+    Console.WriteLine("Please enter the last name of the employee.");
+    LastName = Console.ReadLine();
+    Console.WriteLine("Please enter the email of the employee.");
+    Email = Console.ReadLine();
+    
+}
 employee.Print();

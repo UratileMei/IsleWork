@@ -2,5 +2,6 @@ namespace IsleWork;
 
 public class Employee
 {
-    int Id = 0;
+    int Id{get;set;}
+    String EmployeeName{get;set;}
 }

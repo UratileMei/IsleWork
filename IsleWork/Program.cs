@@ -35,6 +35,6 @@ while (true)
 foreach (Employee e in employList)
 {
     
-    Console.WriteLine($"Employee Name: {e.EmployeeName} /n ");
+    Console.WriteLine($"Employee Name: {e.EmployeeName} \n Employee Surname: {e.EmployeeSurname}");
 }
 

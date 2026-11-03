@@ -8,8 +8,9 @@ public class Employee
     public String EmployeeEmail{ get; set; } 
     public String EmployeePhone{ get; set; }
     public String EmployeeRole{ get; set; }
+    public int EmployeeAge{ get; set; }
 
-    public Employee(int  id, string name, string surname, string email, string phone, string role)
+    public Employee(int  id, string name, string surname, string email, string phone, string role, int age)
     {
         Id = id;
         EmployeeName = name;
@@ -17,5 +18,6 @@ public class Employee
         EmployeeEmail = email;
         EmployeePhone = phone;
         EmployeeRole = role;
+        EmployeeAge = age;
     }
 }

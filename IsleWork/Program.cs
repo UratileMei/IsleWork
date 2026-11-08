@@ -1,12 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using IsleWork;
+int id = 0;
 List<Employee> employList = new List<Employee>();
 String Title = "******************************-Employee Registration-******************************";
 Console.WriteLine(Title);
 while (true)
 {
     Console.WriteLine("\nPlease enter your name or type 'exit'");
-    int id = 0;
+    
     string inputName = Console.ReadLine();
 
     if (inputName.Equals("exit", StringComparison.OrdinalIgnoreCase))
@@ -29,12 +30,12 @@ while (true)
     }
     Employee newEmployee = new Employee(id , inputName, inputSurname, inputEmail, inputCellphone, inputRole, inputAge);
     employList.Add(newEmployee);
-    
+    id++;
     Console.WriteLine($"{newEmployee.EmployeeName} added successfully");
 }
 foreach (Employee e in employList)
 {
     
-    Console.WriteLine($"Employee Name: {e.EmployeeName} \n Employee Surname: {e.EmployeeSurname}");
+    Console.WriteLine($"Employee ID: {e.Id} \nEmployee Name: {e.EmployeeName} \nEmployee Surname: {e.EmployeeSurname} \nEmployee Email: {e.EmployeeEmail} \nEmployee Phone: {e.EmployeeAge}");
 }
 

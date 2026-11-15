@@ -21,8 +21,17 @@ public class Employee
         EmployeeAge = age;
     }
 
-    public void changeEmail(string newEmail)
+    public void ChangeEmail(string newEmail)
     {
+        if(String.IsNullOrWhiteSpace(newEmail))
+        {
+            throw new ArgumentException("Email cannot be null or empty", nameof(newEmail));
+        }
         EmployeeEmail = newEmail;
+    }
+
+    public void changePersonalInformation(string newPersonalInformation)
+    {
+        
     }
 }
